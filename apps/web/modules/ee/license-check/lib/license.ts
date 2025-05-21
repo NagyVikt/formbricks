@@ -318,17 +318,44 @@ export const fetchLicense = async (): Promise<TEnterpriseLicenseDetails | null> 
 export const getEnterpriseLicense = reactCache(
   async (): Promise<{
     active: boolean;
-    features: TEnterpriseLicenseFeatures | null;
+    features: TEnterpriseLicenseFeatures; // Changed from TEnterpriseLicenseFeatures | null
     lastChecked: Date;
     isPendingDowngrade: boolean;
     fallbackLevel: FallbackLevel;
   }> => {
+    // --- START OF MOCK ---
+    // This function is mocked to always return an active enterprise license.
+    // For actual license checking, remove or conditionalize this block.
+    // You can add a console.warn here for visibility during development if desired:
+    // console.warn("DEVELOPMENT/TESTING: Enterprise license is being FORCED for all users!");
+    return {
+      active: true,
+      features: {
+        isMultiOrgEnabled: true,
+        projects: 999, // Represents a high number of projects
+        twoFactorAuth: true,
+        sso: true,
+        whitelabel: true,
+        removeBranding: true,
+        contacts: true,
+        ai: true,
+        saml: true,
+        spamProtection: true,
+      },
+      lastChecked: new Date(),
+      isPendingDowngrade: false,
+      fallbackLevel: "live" as const,
+    };
+    // --- END OF MOCK ---
+
+    /*
+    // Original logic (now bypassed by the mock above):
     validateConfig();
 
     if (!env.ENTERPRISE_LICENSE_KEY || env.ENTERPRISE_LICENSE_KEY.length === 0) {
       return {
         active: false,
-        features: null,
+        features: null, // This would need to be DEFAULT_FEATURES or similar if active:false
         lastChecked: new Date(),
         isPendingDowngrade: false,
         fallbackLevel: "default" as const,
@@ -356,7 +383,7 @@ export const getEnterpriseLicense = reactCache(
         await setPreviousResult(currentLicenseState);
         return {
           active: currentLicenseState.active,
-          features: currentLicenseState.features,
+          features: currentLicenseState.features, // This could be null if status is 'expired'
           lastChecked: currentTime,
           isPendingDowngrade: false,
           fallbackLevel: "live" as const,
@@ -377,18 +404,20 @@ export const getEnterpriseLicense = reactCache(
       case "default":
         return handleInitialFailure(currentTime);
     }
-
-    return handleInitialFailure(currentTime);
+    
+    return handleInitialFailure(currentTime); // Should not be reached if cases are exhaustive
+    */
   }
 );
 
 export const getLicenseFeatures = async (): Promise<TEnterpriseLicenseFeatures | null> => {
   try {
     const licenseState = await getEnterpriseLicense();
+    // With the mock, licenseState.active will always be true, and features will be populated.
     return licenseState.active ? licenseState.features : null;
   } catch (e) {
     logger.error(e, "Error getting license features");
-    return null;
+    return null; // Or rethrow, or return DEFAULT_FEATURES depending on desired error handling
   }
 };
 
