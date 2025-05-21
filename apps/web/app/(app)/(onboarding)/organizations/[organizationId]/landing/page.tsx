@@ -9,7 +9,13 @@ import { notFound, redirect } from "next/navigation";
 
 const Page = async (props) => {
   const params = await props.params;
-  const t = await getTranslate();
+  let t;
+  try {
+    t = await getTranslate();
+  } catch (e) {
+    // Simple fallback: returns the key itself (not translated)
+    t = (key) => key;
+  }
 
   const { session, organization } = await getOrganizationAuth(params.organizationId);
 

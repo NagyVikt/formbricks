@@ -1,12 +1,5 @@
 #!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
 
-# Load environment variables from .env files
-if [ -f .env ]; then
-  set -a
-  . .env
-  set +a
-fi
 
 pnpm lint-staged
 
