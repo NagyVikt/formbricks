@@ -9,6 +9,10 @@
   "push": {
     "files": [
       {
+        "language": "hu-HU",
+        "path": "./apps/web/locales/hu-HU.json"
+      },
+      {
         "language": "en-US",
         "path": "./apps/web/locales/en-US.json"
       },
@@ -17,20 +21,24 @@
         "path": "./apps/web/locales/de-DE.json"
       },
       {
-        "language": "fr-FR",
-        "path": "./apps/web/locales/fr-FR.json"
+        "language": "es-ES",
+        "path": "./apps/web/locales/es-ES.json"
       },
       {
-        "language": "pt-BR",
-        "path": "./apps/web/locales/pt-BR.json"
+        "language": "it-IT",
+        "path": "./apps/web/locales/it-IT.json"
       },
       {
-        "language": "zh-Hant-TW",
-        "path": "./apps/web/locales/zh-Hant-TW.json"
+        "language": "ja-JP",
+        "path": "./apps/web/locales/ja-JP.json"
       },
       {
-        "language": "pt-PT",
-        "path": "./apps/web/locales/pt-PT.json"
+        "language": "ko-KR",
+        "path": "./apps/web/locales/ko-KR.json"
+      },
+      {
+        "language": "ru-RU",
+        "path": "./apps/web/locales/ru-RU.json"
       }
     ],
     "forceMode": "OVERRIDE"
