@@ -339,34 +339,7 @@ export const getEnterpriseLicense = reactCache(
     isPendingDowngrade: boolean;
     fallbackLevel: FallbackLevel;
   }> => {
-    // --- START OF MOCK ---
-    // This function is mocked to always return an active enterprise license.
-    // For actual license checking, remove or conditionalize this block.
-    // You can add a console.warn here for visibility during development if desired:
-    // console.warn("DEVELOPMENT/TESTING: Enterprise license is being FORCED for all users!");
-    return {
-      active: true,
-      features: {
-        isMultiOrgEnabled: true,
-        projects: 999, // Represents a high number of projects
-        twoFactorAuth: true,
-        sso: true,
-        whitelabel: true,
-        removeBranding: true,
-        contacts: true,
-        ai: true,
-        saml: true,
-        spamProtection: true,
-      },
-      lastChecked: new Date(),
-      isPendingDowngrade: false,
-      fallbackLevel: "live" as const,
-    };
-    // --- END OF MOCK ---
-
-    /*
-    // Original logic (now bypassed by the mock above):
-    // validateConfig(); // This was the original call location
+    validateConfig();
 
     if (!env.ENTERPRISE_LICENSE_KEY || env.ENTERPRISE_LICENSE_KEY.length === 0) {
       return {
@@ -399,7 +372,7 @@ export const getEnterpriseLicense = reactCache(
         await setPreviousResult(currentLicenseState); // Would call the now-commented-out function
         return {
           active: currentLicenseState.active,
-          features: currentLicenseState.features,
+          features: currentLicenseState.features, // This could be null if status is 'expired'
           lastChecked: currentTime,
           isPendingDowngrade: false,
           fallbackLevel: "live" as const,

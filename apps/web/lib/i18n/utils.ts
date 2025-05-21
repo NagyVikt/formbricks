@@ -109,13 +109,7 @@ export const addMultiLanguageLabels = (object: any, languageSymbols: string[]): 
       for (const key in obj) {
         if (obj.hasOwnProperty(key)) {
           if (key === "default" && typeof obj[key] === "string") {
-            // Check if the object 'obj' itself is a TI18nString-like structure.
-            // This condition might need to be more robust depending on the actual structure
-            // of TI18nString objects throughout your application.
-            // For now, we assume if 'default' exists and is a string, it's a candidate.
-            // A more precise check would be `isI18nObject(obj)` if applicable here.
             addLanguageKeys(obj);
-
           } else {
             processObject(obj[key]);
           }
