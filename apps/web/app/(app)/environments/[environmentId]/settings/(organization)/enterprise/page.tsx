@@ -106,8 +106,8 @@ const Page = async (props) => {
               </div>
               <p className="text-sm text-slate-500">
                 {t("environments.settings.enterprise.questions_please_reach_out_to")}{" "}
-                <a className="font-semibold underline" href="mailto:hola@formbricks.com">
-                  hola@formbricks.com
+                <a className="font-semibold underline" href="mailto:info@webu.hu">
+                  info@webu.hu
                 </a>
               </p>
             </div>

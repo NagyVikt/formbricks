@@ -118,7 +118,7 @@ export const addMultiLanguageLabels = (object: any, languageSymbols: string[]): 
     }
   }
 
-  // Start processing the question object
+  // Start processing the object
   processObject(object);
 
   return object;
@@ -134,6 +134,7 @@ export const appLanguages = [
       "fr-FR": "Anglais (États-Unis)",
       "zh-Hant-TW": "英文 (美國)",
       "pt-PT": "Inglês (EUA)",
+      "hu-HU": "Angol (USA)", // Added Hungarian translation
     },
   },
   {
@@ -145,6 +146,7 @@ export const appLanguages = [
       "fr-FR": "Allemand",
       "zh-Hant-TW": "德語",
       "pt-PT": "Alemão",
+      "hu-HU": "Német", // Added Hungarian translation
     },
   },
   {
@@ -156,6 +158,7 @@ export const appLanguages = [
       "fr-FR": "Portugais (Brésil)",
       "zh-Hant-TW": "葡萄牙語 (巴西)",
       "pt-PT": "Português (Brasil)",
+      "hu-HU": "Portugál (Brazília)", // Added Hungarian translation
     },
   },
   {
@@ -167,6 +170,7 @@ export const appLanguages = [
       "fr-FR": "Français",
       "zh-Hant-TW": "法語",
       "pt-PT": "Francês",
+      "hu-HU": "Francia", // Added Hungarian translation
     },
   },
   {
@@ -178,6 +182,7 @@ export const appLanguages = [
       "fr-FR": "Chinois (Traditionnel)",
       "zh-Hant-TW": "繁體中文",
       "pt-PT": "Chinês (Tradicional)",
+      "hu-HU": "Kínai (hagyományos)", // Added Hungarian translation
     },
   },
   {
@@ -189,6 +194,19 @@ export const appLanguages = [
       "fr-FR": "Portugais (Portugal)",
       "zh-Hant-TW": "葡萄牙語 (葡萄牙)",
       "pt-PT": "Português (Portugal)",
+      "hu-HU": "Portugál (Portugália)", // Added Hungarian translation
+    },
+  },
+  { // Added new Hungarian language entry
+    code: "hu-HU",
+    label: {
+      "en-US": "Hungarian",
+      "de-DE": "Ungarisch",
+      "pt-BR": "Húngaro",
+      "fr-FR": "Hongrois",
+      "zh-Hant-TW": "匈牙利語",
+      "pt-PT": "Húngaro",
+      "hu-HU": "Magyar",
     },
   },
 ];
