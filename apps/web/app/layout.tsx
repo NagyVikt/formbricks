@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Formbricks HU", // Updated template
     default: "Formbricks HU", // Updated default title
   },
-  description: "Nyílt forráskódú felmérési csomag", // Hungarian: "Open-Source Survey Suite"
+  description: "Kérdőív létrehozó PLatform", // Hungarian: "Open-Source Survey Suite"
 };
 
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
