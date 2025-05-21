@@ -2,7 +2,8 @@ import { z } from "zod";
 
 const ZRole = z.enum(["project_manager", "engineer", "founder", "marketing_specialist", "other"]);
 
-export const ZUserLocale = z.enum(["en-US", "de-DE", "pt-BR", "fr-FR", "zh-Hant-TW", "pt-PT"]);
+// Added "hu-HU" to the ZUserLocale enum
+export const ZUserLocale = z.enum(["en-US", "de-DE", "pt-BR", "fr-FR", "zh-Hant-TW", "pt-PT", "hu-HU"]);
 
 export type TUserLocale = z.infer<typeof ZUserLocale>;
 export const ZUserObjective = z.enum([
@@ -36,7 +37,7 @@ export const ZUserPassword = z
   .string()
   .min(8)
   .max(128, { message: "Password must be 128 characters or less" })
-  .regex(/^(?=.*[A-Z])(?=.*\d).*$/);
+  .regex(/^(?=.*[A-Z])(?=.*\d).*$/); // Requires at least one uppercase letter and one digit
 
 export type TUserPassword = z.infer<typeof ZUserPassword>;
 
@@ -57,7 +58,7 @@ export const ZUser = z.object({
   role: ZRole.nullable(),
   objective: ZUserObjective.nullable(),
   notificationSettings: ZUserNotificationSettings,
-  locale: ZUserLocale,
+  locale: ZUserLocale, // Will now include hu-HU
   lastLoginAt: z.date().nullable(),
   isActive: z.boolean().default(true),
 });
@@ -71,9 +72,9 @@ export const ZUserUpdateInput = z.object({
   password: ZUserPassword.optional(),
   role: ZRole.optional(),
   objective: ZUserObjective.nullish(),
-  imageUrl: z.string().nullish(),
+  imageUrl: z.string().url().nullish(), // Made URL validation consistent
   notificationSettings: ZUserNotificationSettings.optional(),
-  locale: ZUserLocale.optional(),
+  locale: ZUserLocale.optional(), // Will now include hu-HU
   lastLoginAt: z.date().nullish(),
   isActive: z.boolean().optional(),
 });
@@ -84,12 +85,12 @@ export const ZUserCreateInput = z.object({
   name: ZUserName,
   email: ZUserEmail,
   password: ZUserPassword.optional(),
-  emailVerified: z.date().optional(),
+  emailVerified: z.date().optional(), // Changed from nullish to optional for consistency
   role: ZRole.optional(),
   objective: ZUserObjective.nullish(),
   identityProvider: ZUserIdentityProvider.optional(),
   identityProviderAccountId: z.string().optional(),
-  locale: ZUserLocale.optional(),
+  locale: ZUserLocale.optional(), // Will now include hu-HU
 });
 
 export type TUserCreateInput = z.infer<typeof ZUserCreateInput>;

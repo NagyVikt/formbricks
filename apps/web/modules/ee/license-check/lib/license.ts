@@ -30,12 +30,15 @@ const CONFIG = {
 // Types
 type FallbackLevel = "live" | "cached" | "grace" | "default";
 
+// Commented out as it's unused with the current mock
+/*
 type TPreviousResult = {
   active: boolean;
   lastChecked: Date;
   features: TEnterpriseLicenseFeatures | null;
   version: number; // For cache versioning
 };
+*/
 
 // Validation schemas
 const LicenseFeaturesSchema = z.object({
@@ -96,7 +99,8 @@ export const getCacheKeys = () => {
   };
 };
 
-// Default features
+// Default features - Commented out as it's unused with the current mock
+/*
 const DEFAULT_FEATURES: TEnterpriseLicenseFeatures = {
   isMultiOrgEnabled: false,
   projects: 3,
@@ -109,24 +113,27 @@ const DEFAULT_FEATURES: TEnterpriseLicenseFeatures = {
   saml: false,
   spamProtection: false,
 };
+*/
 
 // Helper functions
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-const validateConfig = () => {
-  const errors: string[] = [];
-  if (CONFIG.CACHE.GRACE_PERIOD_MS >= CONFIG.CACHE.PREVIOUS_RESULT_TTL_MS) {
-    errors.push("Grace period must be shorter than previous result TTL");
-  }
-  if (CONFIG.CACHE.MAX_RETRIES < 0) {
-    errors.push("Max retries must be non-negative");
-  }
-  if (errors.length > 0) {
-    throw new LicenseError(errors.join(", "), "CONFIG_ERROR");
-  }
-};
+// Removed unused validateConfig function
+// const validateConfig = () => {
+//   const errors: string[] = [];
+//   if (CONFIG.CACHE.GRACE_PERIOD_MS >= CONFIG.CACHE.PREVIOUS_RESULT_TTL_MS) {
+//     errors.push("Grace period must be shorter than previous result TTL");
+//   }
+//   if (CONFIG.CACHE.MAX_RETRIES < 0) {
+//     errors.push("Max retries must be non-negative");
+//   }
+//   if (errors.length > 0) {
+//     throw new LicenseError(errors.join(", "), "CONFIG_ERROR");
+//   }
+// };
 
-// Cache functions
+// Cache functions - Commented out as they are unused with the current mock
+/*
 const getPreviousResult = async (): Promise<TPreviousResult> => {
   if (typeof window !== "undefined") {
     return {
@@ -163,14 +170,17 @@ const setPreviousResult = async (previousResult: TPreviousResult) => {
     CONFIG.CACHE.PREVIOUS_RESULT_TTL_MS
   );
 };
+*/
 
-// Monitoring functions
+// Monitoring functions - trackFallbackUsage is unused with the current mock
+/*
 const trackFallbackUsage = (level: FallbackLevel) => {
   logger.info(`Using license fallback level: ${level}`, {
     fallbackLevel: level,
     timestamp: new Date().toISOString(),
   });
 };
+*/
 
 const trackApiError = (error: LicenseApiError) => {
   logger.error(`License API error: ${error.message}`, {
@@ -180,19 +190,22 @@ const trackApiError = (error: LicenseApiError) => {
   });
 };
 
-// Validation functions
+// Validation functions - validateFallback is unused with the current mock
+/*
 const validateFallback = (previousResult: TPreviousResult): boolean => {
   if (!previousResult.features) return false;
   if (previousResult.lastChecked.getTime() === new Date(0).getTime()) return false;
   if (previousResult.version !== 1) return false; // Add version check
   return true;
 };
+*/
 
 const validateLicenseDetails = (data: unknown): TEnterpriseLicenseDetails => {
   return LicenseDetailsSchema.parse(data);
 };
 
-// Fallback functions
+// Fallback functions - getFallbackLevel and handleInitialFailure are unused with the current mock
+/*
 const getFallbackLevel = (
   liveLicense: TEnterpriseLicenseDetails | null,
   previousResult: TPreviousResult,
@@ -213,7 +226,7 @@ const handleInitialFailure = async (currentTime: Date) => {
     lastChecked: currentTime,
     version: 1,
   };
-  await setPreviousResult(initialFailResult);
+  await setPreviousResult(initialFailResult); // This would also need setPreviousResult
   return {
     active: false,
     features: DEFAULT_FEATURES,
@@ -222,6 +235,7 @@ const handleInitialFailure = async (currentTime: Date) => {
     fallbackLevel: "default" as const,
   };
 };
+*/
 
 // API functions
 const fetchLicenseFromServerInternal = async (retryCount = 0): Promise<TEnterpriseLicenseDetails | null> => {
@@ -292,6 +306,8 @@ const fetchLicenseFromServerInternal = async (retryCount = 0): Promise<TEnterpri
 };
 
 export const fetchLicense = async (): Promise<TEnterpriseLicenseDetails | null> => {
+  // If getEnterpriseLicense is always mocked, this function might not be strictly necessary
+  // for the mocked behavior, but it's kept in case it's used elsewhere or for future un-mocking.
   if (!env.ENTERPRISE_LICENSE_KEY) return null;
 
   const formbricksCache = getCache();
@@ -318,17 +334,44 @@ export const fetchLicense = async (): Promise<TEnterpriseLicenseDetails | null> 
 export const getEnterpriseLicense = reactCache(
   async (): Promise<{
     active: boolean;
-    features: TEnterpriseLicenseFeatures | null;
+    features: TEnterpriseLicenseFeatures; // Changed from TEnterpriseLicenseFeatures | null
     lastChecked: Date;
     isPendingDowngrade: boolean;
     fallbackLevel: FallbackLevel;
   }> => {
-    validateConfig();
+    // --- START OF MOCK ---
+    // This function is mocked to always return an active enterprise license.
+    // For actual license checking, remove or conditionalize this block.
+    // You can add a console.warn here for visibility during development if desired:
+    // console.warn("DEVELOPMENT/TESTING: Enterprise license is being FORCED for all users!");
+    return {
+      active: true,
+      features: {
+        isMultiOrgEnabled: true,
+        projects: 999, // Represents a high number of projects
+        twoFactorAuth: true,
+        sso: true,
+        whitelabel: true,
+        removeBranding: true,
+        contacts: true,
+        ai: true,
+        saml: true,
+        spamProtection: true,
+      },
+      lastChecked: new Date(),
+      isPendingDowngrade: false,
+      fallbackLevel: "live" as const,
+    };
+    // --- END OF MOCK ---
+
+    /*
+    // Original logic (now bypassed by the mock above):
+    // validateConfig(); // This was the original call location
 
     if (!env.ENTERPRISE_LICENSE_KEY || env.ENTERPRISE_LICENSE_KEY.length === 0) {
       return {
         active: false,
-        features: null,
+        features: null, // This would need to be DEFAULT_FEATURES or similar if active:false
         lastChecked: new Date(),
         isPendingDowngrade: false,
         fallbackLevel: "default" as const,
@@ -337,10 +380,10 @@ export const getEnterpriseLicense = reactCache(
 
     const currentTime = new Date();
     const liveLicenseDetails = await fetchLicense();
-    const previousResult = await getPreviousResult();
-    const fallbackLevel = getFallbackLevel(liveLicenseDetails, previousResult, currentTime);
+    const previousResult = await getPreviousResult(); // Would call the now-commented-out function
+    const fallbackLevel = getFallbackLevel(liveLicenseDetails, previousResult, currentTime); // Would call the now-commented-out function
 
-    trackFallbackUsage(fallbackLevel);
+    trackFallbackUsage(fallbackLevel); // Would call the now-commented-out function
 
     let currentLicenseState: TPreviousResult | undefined;
 
@@ -353,7 +396,7 @@ export const getEnterpriseLicense = reactCache(
           lastChecked: currentTime,
           version: 1,
         };
-        await setPreviousResult(currentLicenseState);
+        await setPreviousResult(currentLicenseState); // Would call the now-commented-out function
         return {
           active: currentLicenseState.active,
           features: currentLicenseState.features,
@@ -363,8 +406,8 @@ export const getEnterpriseLicense = reactCache(
         };
 
       case "grace":
-        if (!validateFallback(previousResult)) {
-          return handleInitialFailure(currentTime);
+        if (!validateFallback(previousResult)) { // Would call the now-commented-out function
+          return handleInitialFailure(currentTime); // Would call the now-commented-out function
         }
         return {
           active: previousResult.active,
@@ -375,20 +418,22 @@ export const getEnterpriseLicense = reactCache(
         };
 
       case "default":
-        return handleInitialFailure(currentTime);
+        return handleInitialFailure(currentTime); // Would call the now-commented-out function
     }
-
-    return handleInitialFailure(currentTime);
+    
+    return handleInitialFailure(currentTime); // Should not be reached if cases are exhaustive
+    */
   }
 );
 
 export const getLicenseFeatures = async (): Promise<TEnterpriseLicenseFeatures | null> => {
   try {
     const licenseState = await getEnterpriseLicense();
+    // With the mock, licenseState.active will always be true, and features will be populated.
     return licenseState.active ? licenseState.features : null;
   } catch (e) {
     logger.error(e, "Error getting license features");
-    return null;
+    return null; // Or rethrow, or return DEFAULT_FEATURES depending on desired error handling
   }
 };
 

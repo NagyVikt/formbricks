@@ -7,6 +7,7 @@ export interface TIso639Language {
     "fr-FR": string;
     "zh-Hant-TW": string;
     "pt-PT": string;
+    "hu-HU": string; // Added Hungarian locale
   };
 }
 
@@ -20,6 +21,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Afar",
       "zh-Hant-TW": "阿法爾語",
       "pt-PT": "Afar",
+      "hu-HU": "Afar", // TODO: Add Hungarian translation
     },
   },
   {
@@ -31,6 +33,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Abkhaze",
       "zh-Hant-TW": "阿布哈茲語",
       "pt-PT": "Abcásio",
+      "hu-HU": "Abkhazian", // TODO: Add Hungarian translation (Abház)
     },
   },
   {
@@ -42,6 +45,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Avestique",
       "zh-Hant-TW": "阿維斯陀語",
       "pt-PT": "Avestano",
+      "hu-HU": "Avestan", // TODO: Add Hungarian translation (Avesztai)
     },
   },
   {
@@ -53,6 +57,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Afrikaans",
       "zh-Hant-TW": "南非語",
       "pt-PT": "Afrikâner",
+      "hu-HU": "Afrikaans", // TODO: Add Hungarian translation
     },
   },
   {
@@ -64,6 +69,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Akan",
       "zh-Hant-TW": "阿肯語",
       "pt-PT": "Akan",
+      "hu-HU": "Akan", // TODO: Add Hungarian translation
     },
   },
   {
@@ -75,6 +81,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Amharique",
       "zh-Hant-TW": "阿姆哈拉語",
       "pt-PT": "Amárico",
+      "hu-HU": "Amharic", // TODO: Add Hungarian translation (Amhara)
     },
   },
   {
@@ -86,6 +93,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Aragonês",
       "zh-Hant-TW": "阿拉貢語",
       "pt-PT": "Aragones",
+      "hu-HU": "Aragonese", // TODO: Add Hungarian translation (Aragóniai)
     },
   },
   {
@@ -97,6 +105,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Arabe",
       "zh-Hant-TW": "阿拉伯語",
       "pt-PT": "Arábico",
+      "hu-HU": "Arabic", // TODO: Add Hungarian translation (Arab)
     },
   },
   {
@@ -108,6 +117,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Assamais",
       "zh-Hant-TW": "阿薩姆語",
       "pt-PT": "Assamese",
+      "hu-HU": "Assamese", // TODO: Add Hungarian translation (Asszámi)
     },
   },
   {
@@ -119,6 +129,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Avaric",
       "zh-Hant-TW": "阿瓦爾語",
       "pt-PT": "Avaric",
+      "hu-HU": "Avaric", // TODO: Add Hungarian translation (Avar)
     },
   },
   {
@@ -130,6 +141,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Aymara",
       "zh-Hant-TW": "艾馬拉語",
       "pt-PT": "Aymara",
+      "hu-HU": "Aymara", // TODO: Add Hungarian translation (Ajmara)
     },
   },
   {
@@ -141,6 +153,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Azerbaïdjanais",
       "zh-Hant-TW": "亞塞拜然語",
       "pt-PT": "Azerbaijano",
+      "hu-HU": "Azerbaijani", // TODO: Add Hungarian translation (Azeri)
     },
   },
   {
@@ -148,10 +161,11 @@ export const iso639Languages: TIso639Language[] = [
     label: {
       "en-US": "Bashkir",
       "de-DE": "Baschkirisch",
-      "pt-BR": "Basco",
+      "pt-BR": "Basco", // Note: This seems to be 'Basque' in pt-BR, Bashkir is 'Baxir'
       "fr-FR": "Bashkir",
       "zh-Hant-TW": "巴什基爾語",
-      "pt-PT": "Basco",
+      "pt-PT": "Basco", // Note: This seems to be 'Basque' in pt-PT, Bashkir is 'Baxir'
+      "hu-HU": "Bashkir", // TODO: Add Hungarian translation (Baskír)
     },
   },
   {
@@ -163,6 +177,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Biélorusse",
       "zh-Hant-TW": "白俄羅斯語",
       "pt-PT": "Bielorrusso",
+      "hu-HU": "Belarusian", // TODO: Add Hungarian translation (Belarusz)
     },
   },
   {
@@ -174,6 +189,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Bulgare",
       "zh-Hant-TW": "保加利亞語",
       "pt-PT": "Búlgaro",
+      "hu-HU": "Bulgarian", // TODO: Add Hungarian translation (Bolgár)
     },
   },
   {
@@ -185,6 +201,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Bihari",
       "zh-Hant-TW": "比哈里語",
       "pt-PT": "Bihari",
+      "hu-HU": "Bihari languages", // TODO: Add Hungarian translation (Bihari nyelvek)
     },
   },
   {
@@ -196,6 +213,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Bislama",
       "zh-Hant-TW": "比斯拉馬語",
       "pt-PT": "Bislama",
+      "hu-HU": "Bislama", // TODO: Add Hungarian translation
     },
   },
   {
@@ -207,6 +225,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Bambara",
       "zh-Hant-TW": "班巴拉語",
       "pt-PT": "Bambara",
+      "hu-HU": "Bambara", // TODO: Add Hungarian translation
     },
   },
   {
@@ -218,6 +237,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Bengali",
       "zh-Hant-TW": "孟加拉語",
       "pt-PT": "Bengali",
+      "hu-HU": "Bengali", // TODO: Add Hungarian translation (Bengáli)
     },
   },
   {
@@ -229,6 +249,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tibétain",
       "zh-Hant-TW": "藏語",
       "pt-PT": "Tibetano",
+      "hu-HU": "Tibetan", // TODO: Add Hungarian translation (Tibeti)
     },
   },
   {
@@ -240,6 +261,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Breton",
       "zh-Hant-TW": "布列塔尼語",
       "pt-PT": "Breton",
+      "hu-HU": "Breton", // TODO: Add Hungarian translation
     },
   },
   {
@@ -251,6 +273,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Bosnien",
       "zh-Hant-TW": "波士尼亞語",
       "pt-PT": "Bosnian",
+      "hu-HU": "Bosnian", // TODO: Add Hungarian translation (Bosnyák)
     },
   },
   {
@@ -262,6 +285,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Catalan; Valencian",
       "zh-Hant-TW": "加泰隆尼亞語；瓦倫西亞語",
       "pt-PT": "Catalão; Valenciano",
+      "hu-HU": "Catalan; Valencian", // TODO: Add Hungarian translation (Katalán; Valenciai)
     },
   },
   {
@@ -273,6 +297,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tchechen",
       "zh-Hant-TW": "車臣語",
       "pt-PT": "Tchechen",
+      "hu-HU": "Chechen", // TODO: Add Hungarian translation (Csecsen)
     },
   },
   {
@@ -284,6 +309,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Chamorro",
       "zh-Hant-TW": "查莫羅語",
       "pt-PT": "Chamorro",
+      "hu-HU": "Chamorro", // TODO: Add Hungarian translation (Csamoró)
     },
   },
   {
@@ -295,6 +321,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Corsican",
       "zh-Hant-TW": "科西嘉語",
       "pt-PT": "Corsican",
+      "hu-HU": "Corsican", // TODO: Add Hungarian translation (Korzikai)
     },
   },
   {
@@ -306,6 +333,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Cree",
       "zh-Hant-TW": "克里語",
       "pt-PT": "Cree",
+      "hu-HU": "Cree", // TODO: Add Hungarian translation (Krí)
     },
   },
   {
@@ -317,6 +345,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tcheque",
       "zh-Hant-TW": "捷克語",
       "pt-PT": "Tcheco",
+      "hu-HU": "Czech", // TODO: Add Hungarian translation (Cseh)
     },
   },
   {
@@ -331,6 +360,7 @@ export const iso639Languages: TIso639Language[] = [
       "zh-Hant-TW": "教會斯拉夫語；古教會斯拉夫語；古保加利亞語",
       "pt-PT":
         "Sânscrito eclesiástico; Antigo eslavônico; Sânscrito eclesiástico; Antigo búlgaro; Antigo sânscrito eclesiástico",
+      "hu-HU": "Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic", // TODO: Add Hungarian translation (Egyházi szláv; Ószláv; Óbolgár)
     },
   },
   {
@@ -342,6 +372,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tchuvasche",
       "zh-Hant-TW": "楚瓦什語",
       "pt-PT": "Tchuvasche",
+      "hu-HU": "Chuvash", // TODO: Add Hungarian translation (Csuvas)
     },
   },
   {
@@ -353,6 +384,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Gallois",
       "zh-Hant-TW": "威爾斯語",
       "pt-PT": "Galês",
+      "hu-HU": "Welsh", // TODO: Add Hungarian translation (Walesi)
     },
   },
   {
@@ -364,6 +396,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Danois",
       "zh-Hant-TW": "丹麥語",
       "pt-PT": "Dinamarquês",
+      "hu-HU": "Danish", // TODO: Add Hungarian translation (Dán)
     },
   },
   {
@@ -375,6 +408,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Allemand",
       "zh-Hant-TW": "德語",
       "pt-PT": "Alemão",
+      "hu-HU": "German", // TODO: Add Hungarian translation (Német)
     },
   },
   {
@@ -386,6 +420,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Divehi; Dhivehi; Maldivien",
       "zh-Hant-TW": "迪維西語；迪維西語；馬爾地夫語",
       "pt-PT": "Divehi; Dhivehi; Maldiviano",
+      "hu-HU": "Divehi; Dhivehi; Maldivian", // TODO: Add Hungarian translation (Divehi; Maldív)
     },
   },
   {
@@ -397,6 +432,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Dzongkha",
       "zh-Hant-TW": "宗喀語",
       "pt-PT": "Dzongkha",
+      "hu-HU": "Dzongkha", // TODO: Add Hungarian translation (Dzongkha)
     },
   },
   {
@@ -408,6 +444,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Ewe",
       "zh-Hant-TW": "埃維語",
       "pt-PT": "Ewe",
+      "hu-HU": "Ewe", // TODO: Add Hungarian translation (Eve)
     },
   },
   {
@@ -419,6 +456,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Grec moderne (après 1453)",
       "zh-Hant-TW": "希臘語（現代，1453-）",
       "pt-PT": "Grego moderno (1453-)",
+      "hu-HU": "Greek, Modern (1453-)", // TODO: Add Hungarian translation (Újgörög)
     },
   },
   {
@@ -430,6 +468,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Anglais",
       "zh-Hant-TW": "英文",
       "pt-PT": "Inglês",
+      "hu-HU": "English", // TODO: Add Hungarian translation (Angol)
     },
   },
   {
@@ -441,6 +480,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Esperanto",
       "zh-Hant-TW": "世界語",
       "pt-PT": "Esperanto",
+      "hu-HU": "Esperanto", // TODO: Add Hungarian translation (Eszperantó)
     },
   },
   {
@@ -452,6 +492,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Espagnol; Castillan",
       "zh-Hant-TW": "西班牙語；卡斯提爾語",
       "pt-PT": "Espanhol; Castelao",
+      "hu-HU": "Spanish; Castilian", // TODO: Add Hungarian translation (Spanyol; Kasztíliai)
     },
   },
   {
@@ -463,6 +504,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Estonien",
       "zh-Hant-TW": "愛沙尼亞語",
       "pt-PT": "Estoniano",
+      "hu-HU": "Estonian", // TODO: Add Hungarian translation (Észt)
     },
   },
   {
@@ -474,6 +516,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Basque",
       "zh-Hant-TW": "巴斯克語",
       "pt-PT": "Basco",
+      "hu-HU": "Basque", // TODO: Add Hungarian translation (Baszk)
     },
   },
   {
@@ -485,6 +528,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Persan",
       "zh-Hant-TW": "波斯語",
       "pt-PT": "Persa",
+      "hu-HU": "Persian", // TODO: Add Hungarian translation (Perzsa)
     },
   },
   {
@@ -496,6 +540,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Fulah",
       "zh-Hant-TW": "富拉語",
       "pt-PT": "Fulah",
+      "hu-HU": "Fulah", // TODO: Add Hungarian translation (Fula)
     },
   },
   {
@@ -507,6 +552,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Finlandais",
       "zh-Hant-TW": "芬蘭語",
       "pt-PT": "Finlandês",
+      "hu-HU": "Finnish", // TODO: Add Hungarian translation (Finn)
     },
   },
   {
@@ -518,6 +564,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Fijien",
       "zh-Hant-TW": "斐濟語",
       "pt-PT": "Fijiano",
+      "hu-HU": "Fijian", // TODO: Add Hungarian translation (Fidzsi)
     },
   },
   {
@@ -529,6 +576,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Féroïen",
       "zh-Hant-TW": "法羅語",
       "pt-PT": "Feroês",
+      "hu-HU": "Faroese", // TODO: Add Hungarian translation (Feröeri)
     },
   },
   {
@@ -540,6 +588,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Français",
       "zh-Hant-TW": "法語",
       "pt-PT": "Francês",
+      "hu-HU": "French", // TODO: Add Hungarian translation (Francia)
     },
   },
   {
@@ -551,6 +600,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Frison occidental",
       "zh-Hant-TW": "西弗里斯蘭語",
       "pt-PT": "Frísio ocidental",
+      "hu-HU": "Western Frisian", // TODO: Add Hungarian translation (Nyugati fríz)
     },
   },
   {
@@ -562,6 +612,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Irlandais",
       "zh-Hant-TW": "愛爾蘭語",
       "pt-PT": "Irlandês",
+      "hu-HU": "Irish", // TODO: Add Hungarian translation (Ír)
     },
   },
   {
@@ -573,6 +624,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Gaélique écossais; Gaélique écossais",
       "zh-Hant-TW": "蓋爾語；蘇格蘭蓋爾語",
       "pt-PT": "Gaélico escocês; Gaélico escocês",
+      "hu-HU": "Gaelic; Scottish Gaelic", // TODO: Add Hungarian translation (Gael; Skót gael)
     },
   },
   {
@@ -584,6 +636,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Galicien",
       "zh-Hant-TW": "加利西亞語",
       "pt-PT": "Galego",
+      "hu-HU": "Galician", // TODO: Add Hungarian translation (Galíciai)
     },
   },
   {
@@ -595,6 +648,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Guarani",
       "zh-Hant-TW": "瓜拉尼語",
       "pt-PT": "Guarani",
+      "hu-HU": "Guarani", // TODO: Add Hungarian translation (Guarani)
     },
   },
   {
@@ -606,6 +660,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Gujarati",
       "zh-Hant-TW": "古吉拉特語",
       "pt-PT": "Gujarati",
+      "hu-HU": "Gujarati", // TODO: Add Hungarian translation (Gudzsaráti)
     },
   },
   {
@@ -617,6 +672,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Manx",
       "zh-Hant-TW": "曼島語",
       "pt-PT": "Manx",
+      "hu-HU": "Manx", // TODO: Add Hungarian translation (Manx)
     },
   },
   {
@@ -628,6 +684,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Hausa",
       "zh-Hant-TW": "豪薩語",
       "pt-PT": "Hausa",
+      "hu-HU": "Hausa", // TODO: Add Hungarian translation (Hausza)
     },
   },
   {
@@ -639,6 +696,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Hébreu",
       "zh-Hant-TW": "希伯來語",
       "pt-PT": "Hebraico",
+      "hu-HU": "Hebrew", // TODO: Add Hungarian translation (Héber)
     },
   },
   {
@@ -650,6 +708,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Hindi",
       "zh-Hant-TW": "印地語",
       "pt-PT": "Hindi",
+      "hu-HU": "Hindi", // TODO: Add Hungarian translation (Hindi)
     },
   },
   {
@@ -661,6 +720,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Hiri Motu",
       "zh-Hant-TW": "希里莫圖語",
       "pt-PT": "Hiri Motu",
+      "hu-HU": "Hiri Motu", // TODO: Add Hungarian translation
     },
   },
   {
@@ -672,6 +732,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Croate",
       "zh-Hant-TW": "克羅埃西亞語",
       "pt-PT": "Croata",
+      "hu-HU": "Croatian", // TODO: Add Hungarian translation (Horvát)
     },
   },
   {
@@ -683,6 +744,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Haïtien; Créole haïtien",
       "zh-Hant-TW": "海地語；海地克里奧爾語",
       "pt-PT": "Haitiano; Crioulo haitiano",
+      "hu-HU": "Haitian; Haitian Creole", // TODO: Add Hungarian translation (Haiti; Haiti kreol)
     },
   },
   {
@@ -694,6 +756,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Hongrois",
       "zh-Hant-TW": "匈牙利語",
       "pt-PT": "Húngaro",
+      "hu-HU": "Magyar", // Hungarian for Hungarian
     },
   },
   {
@@ -705,6 +768,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Arménien",
       "zh-Hant-TW": "亞美尼亞語",
       "pt-PT": "Armênio",
+      "hu-HU": "Armenian", // TODO: Add Hungarian translation (Örmény)
     },
   },
   {
@@ -716,6 +780,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Herero",
       "zh-Hant-TW": "赫雷羅語",
       "pt-PT": "Herero",
+      "hu-HU": "Herero", // TODO: Add Hungarian translation
     },
   },
   {
@@ -727,6 +792,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Interlingua (Association internationale des langues auxiliaires)",
       "zh-Hant-TW": "國際語（國際輔助語言協會）",
       "pt-PT": "Interlingua (Associação Internacional de Línguas Auxiliares)",
+      "hu-HU": "Interlingua (International Auxiliary Language Association)", // TODO: Add Hungarian translation (Interlingua)
     },
   },
   {
@@ -738,6 +804,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Indonésien",
       "zh-Hant-TW": "印尼語",
       "pt-PT": "Indonésio",
+      "hu-HU": "Indonesian", // TODO: Add Hungarian translation (Indonéz)
     },
   },
   {
@@ -749,6 +816,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Interlingue; Ocidental",
       "zh-Hant-TW": "國際語；西方語",
       "pt-PT": "Interlingue; Ocidental",
+      "hu-HU": "Interlingue; Occidental", // TODO: Add Hungarian translation (Interlingue; Okcidentál)
     },
   },
   {
@@ -760,6 +828,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Igbo",
       "zh-Hant-TW": "伊博語",
       "pt-PT": "Igbo",
+      "hu-HU": "Igbo", // TODO: Add Hungarian translation (Igbo)
     },
   },
   {
@@ -771,6 +840,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Sichuan Yi; Nuosu",
       "zh-Hant-TW": "彝語；諾蘇語",
       "pt-PT": "Sichuan Yi; Nuosu",
+      "hu-HU": "Sichuan Yi; Nuosu", // TODO: Add Hungarian translation (Szecsuáni ji; Nuoszu)
     },
   },
   {
@@ -782,6 +852,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Inupiaq",
       "zh-Hant-TW": "依努皮克語",
       "pt-PT": "Inupiaq",
+      "hu-HU": "Inupiaq", // TODO: Add Hungarian translation (Inupiak)
     },
   },
   {
@@ -793,6 +864,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Ido",
       "zh-Hant-TW": "伊多語",
       "pt-PT": "Ido",
+      "hu-HU": "Ido", // TODO: Add Hungarian translation (Idó)
     },
   },
   {
@@ -804,6 +876,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Islandais",
       "zh-Hant-TW": "冰島語",
       "pt-PT": "Islandês",
+      "hu-HU": "Icelandic", // TODO: Add Hungarian translation (Izlandi)
     },
   },
   {
@@ -815,6 +888,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Italien",
       "zh-Hant-TW": "義大利語",
       "pt-PT": "Italiano",
+      "hu-HU": "Italian", // TODO: Add Hungarian translation (Olasz)
     },
   },
   {
@@ -826,6 +900,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Inuktitut",
       "zh-Hant-TW": "因紐特語",
       "pt-PT": "Inuktitut",
+      "hu-HU": "Inuktitut", // TODO: Add Hungarian translation (Inuktitut)
     },
   },
   {
@@ -837,6 +912,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Japonais",
       "zh-Hant-TW": "日語",
       "pt-PT": "Japonês",
+      "hu-HU": "Japanese", // TODO: Add Hungarian translation (Japán)
     },
   },
   {
@@ -848,6 +924,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Javanais",
       "zh-Hant-TW": "爪哇語",
       "pt-PT": "Javonês",
+      "hu-HU": "Javanese", // TODO: Add Hungarian translation (Jávai)
     },
   },
   {
@@ -859,6 +936,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Géorgien",
       "zh-Hant-TW": "喬治亞語",
       "pt-PT": "Georgiano",
+      "hu-HU": "Georgian", // TODO: Add Hungarian translation (Grúz)
     },
   },
   {
@@ -870,6 +948,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Kongo",
       "zh-Hant-TW": "剛果語",
       "pt-PT": "Kongo",
+      "hu-HU": "Kongo", // TODO: Add Hungarian translation (Kongói)
     },
   },
   {
@@ -881,6 +960,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Kikuyu; Gikuyu",
       "zh-Hant-TW": "吉庫尤語",
       "pt-PT": "Kikuyu; Gikuyu",
+      "hu-HU": "Kikuyu; Gikuyu", // TODO: Add Hungarian translation (Kikuju)
     },
   },
   {
@@ -892,6 +972,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Kuanyama; Kwanyama",
       "zh-Hant-TW": "寬亞瑪語；寬亞瑪語",
       "pt-PT": "Kuanyama; Kwanyama",
+      "hu-HU": "Kuanyama; Kwanyama", // TODO: Add Hungarian translation (Kuanyama)
     },
   },
   {
@@ -903,6 +984,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Kazakh",
       "zh-Hant-TW": "哈薩克語",
       "pt-PT": "Cazaque",
+      "hu-HU": "Kazakh", // TODO: Add Hungarian translation (Kazah)
     },
   },
   {
@@ -914,6 +996,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Kalaallisut; Groenlandais",
       "zh-Hant-TW": "格陵蘭語",
       "pt-PT": "Kalaallisut; Greenlandic",
+      "hu-HU": "Kalaallisut; Greenlandic", // TODO: Add Hungarian translation (Kalaallisut; Grönlandi)
     },
   },
   {
@@ -925,6 +1008,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Khmer central",
       "zh-Hant-TW": "中央高棉語",
       "pt-PT": "Khmer central",
+      "hu-HU": "Central Khmer", // TODO: Add Hungarian translation (Közép-khmer)
     },
   },
   {
@@ -936,6 +1020,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Kannada",
       "zh-Hant-TW": "卡納達語",
       "pt-PT": "Kannada",
+      "hu-HU": "Kannada", // TODO: Add Hungarian translation (Kannada)
     },
   },
   {
@@ -947,6 +1032,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Coréen",
       "zh-Hant-TW": "韓語",
       "pt-PT": "Coreano",
+      "hu-HU": "Korean", // TODO: Add Hungarian translation (Koreai)
     },
   },
   {
@@ -958,6 +1044,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Kanuri",
       "zh-Hant-TW": "卡努里語",
       "pt-PT": "Kanuri",
+      "hu-HU": "Kanuri", // TODO: Add Hungarian translation (Kanuri)
     },
   },
   {
@@ -969,6 +1056,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Kashmiri",
       "zh-Hant-TW": "卡什米爾語",
       "pt-PT": "Kashmiri",
+      "hu-HU": "Kashmiri", // TODO: Add Hungarian translation (Kasmíri)
     },
   },
   {
@@ -980,6 +1068,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Kurde",
       "zh-Hant-TW": "庫爾德語",
       "pt-PT": "Kurdish",
+      "hu-HU": "Kurdish", // TODO: Add Hungarian translation (Kurd)
     },
   },
   {
@@ -991,6 +1080,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Komi",
       "zh-Hant-TW": "科米語",
       "pt-PT": "Komi",
+      "hu-HU": "Komi", // TODO: Add Hungarian translation (Komi)
     },
   },
   {
@@ -1002,6 +1092,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Cornouaillois",
       "zh-Hant-TW": "康瓦爾語",
       "pt-PT": "Cornualles",
+      "hu-HU": "Cornish", // TODO: Add Hungarian translation (Korni)
     },
   },
   {
@@ -1013,6 +1104,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Kirghiz; Kyrgyz",
       "zh-Hant-TW": "吉爾吉斯語",
       "pt-PT": "Kirghiz; Kyrgyz",
+      "hu-HU": "Kirghiz; Kyrgyz", // TODO: Add Hungarian translation (Kirgiz)
     },
   },
   {
@@ -1024,6 +1116,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Latin",
       "zh-Hant-TW": "拉丁語",
       "pt-PT": "Latim",
+      "hu-HU": "Latin", // TODO: Add Hungarian translation (Latin)
     },
   },
   {
@@ -1035,6 +1128,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Luxembourgeois; Letzeburgesch",
       "zh-Hant-TW": "盧森堡語",
       "pt-PT": "Luxembourgish; Letzeburgesch",
+      "hu-HU": "Luxembourgish; Letzeburgesch", // TODO: Add Hungarian translation (Luxemburgi; Lëtzebuergesch)
     },
   },
   {
@@ -1046,6 +1140,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Ganda",
       "zh-Hant-TW": "干達語",
       "pt-PT": "Ganda",
+      "hu-HU": "Ganda", // TODO: Add Hungarian translation (Ganda)
     },
   },
   {
@@ -1057,6 +1152,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Limbourgeois; Limbourgeois; Limbourgeois",
       "zh-Hant-TW": "林堡語",
       "pt-PT": "Limburgan; Limburger; Limburgish",
+      "hu-HU": "Limburgan; Limburger; Limburgish", // TODO: Add Hungarian translation (Limburgi)
     },
   },
   {
@@ -1068,6 +1164,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Lingala",
       "zh-Hant-TW": "林加拉語",
       "pt-PT": "Lingala",
+      "hu-HU": "Lingala", // TODO: Add Hungarian translation (Lingala)
     },
   },
   {
@@ -1079,6 +1176,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Lao",
       "zh-Hant-TW": "寮語",
       "pt-PT": "Lao",
+      "hu-HU": "Lao", // TODO: Add Hungarian translation (Lao)
     },
   },
   {
@@ -1090,6 +1188,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Lituanien",
       "zh-Hant-TW": "立陶宛語",
       "pt-PT": "Lituaniano",
+      "hu-HU": "Lithuanian", // TODO: Add Hungarian translation (Litván)
     },
   },
   {
@@ -1101,6 +1200,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Luba-Katanga",
       "zh-Hant-TW": "盧巴-加丹加語",
       "pt-PT": "Luba-Katanga",
+      "hu-HU": "Luba-Katanga", // TODO: Add Hungarian translation (Luba-Katanga)
     },
   },
   {
@@ -1112,6 +1212,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Letton",
       "zh-Hant-TW": "拉脫維亞語",
       "pt-PT": "Letão",
+      "hu-HU": "Latvian", // TODO: Add Hungarian translation (Lett)
     },
   },
   {
@@ -1123,6 +1224,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Malagasy",
       "zh-Hant-TW": "馬拉加斯語",
       "pt-PT": "Malagasy",
+      "hu-HU": "Malagasy", // TODO: Add Hungarian translation (Malgas)
     },
   },
   {
@@ -1134,6 +1236,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Marshallese",
       "zh-Hant-TW": "馬紹爾語",
       "pt-PT": "Marshallese",
+      "hu-HU": "Marshallese", // TODO: Add Hungarian translation (Marshalli)
     },
   },
   {
@@ -1145,6 +1248,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Maori",
       "zh-Hant-TW": "毛利語",
       "pt-PT": "Maori",
+      "hu-HU": "Maori", // TODO: Add Hungarian translation (Maori)
     },
   },
   {
@@ -1156,6 +1260,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Macédonien",
       "zh-Hant-TW": "馬其頓語",
       "pt-PT": "Macedónio",
+      "hu-HU": "Macedonian", // TODO: Add Hungarian translation (Macedón)
     },
   },
   {
@@ -1167,6 +1272,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Malayalam",
       "zh-Hant-TW": "馬拉雅拉姆語",
       "pt-PT": "Malayalam",
+      "hu-HU": "Malayalam", // TODO: Add Hungarian translation (Malajálam)
     },
   },
   {
@@ -1178,6 +1284,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Mongol",
       "zh-Hant-TW": "蒙古語",
       "pt-PT": "Mongol",
+      "hu-HU": "Mongolian", // TODO: Add Hungarian translation (Mongol)
     },
   },
   {
@@ -1189,6 +1296,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Marathi",
       "zh-Hant-TW": "馬拉地語",
       "pt-PT": "Marathi",
+      "hu-HU": "Marathi", // TODO: Add Hungarian translation (Maráthi)
     },
   },
   {
@@ -1200,6 +1308,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Malais",
       "zh-Hant-TW": "馬來語",
       "pt-PT": "Malay",
+      "hu-HU": "Malay", // TODO: Add Hungarian translation (Maláj)
     },
   },
   {
@@ -1211,6 +1320,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Maltès",
       "zh-Hant-TW": "馬爾他語",
       "pt-PT": "Maltês",
+      "hu-HU": "Maltese", // TODO: Add Hungarian translation (Máltai)
     },
   },
   {
@@ -1222,6 +1332,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Birman",
       "zh-Hant-TW": "緬甸語",
       "pt-PT": "Birmanês",
+      "hu-HU": "Burmese", // TODO: Add Hungarian translation (Burmai)
     },
   },
   {
@@ -1233,6 +1344,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Nauru",
       "zh-Hant-TW": "諾魯語",
       "pt-PT": "Nauru",
+      "hu-HU": "Nauru", // TODO: Add Hungarian translation (Naurui)
     },
   },
   {
@@ -1244,6 +1356,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Bokmål, Norvégien; Bokmål Norvégien",
       "zh-Hant-TW": "巴克摩挪威語；挪威巴克摩語",
       "pt-PT": "Bokmål, Norueguês; Bokmål Norueguês",
+      "hu-HU": "Bokmål, Norwegian; Norwegian Bokmål", // TODO: Add Hungarian translation (Norvég bokmål)
     },
   },
   {
@@ -1255,6 +1368,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Ndebele, Nord; Nord Ndebele",
       "zh-Hant-TW": "北恩德貝萊語；北恩德貝萊語",
       "pt-PT": "Ndebele, Norte; Norte Ndebele",
+      "hu-HU": "Ndebele, North; North Ndebele", // TODO: Add Hungarian translation (Északi ndebele)
     },
   },
   {
@@ -1266,6 +1380,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Népalais",
       "zh-Hant-TW": "尼泊爾語",
       "pt-PT": "Nepali",
+      "hu-HU": "Nepali", // TODO: Add Hungarian translation (Nepáli)
     },
   },
   {
@@ -1277,6 +1392,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Ndonga",
       "zh-Hant-TW": "恩敦加語",
       "pt-PT": "Ndonga",
+      "hu-HU": "Ndonga", // TODO: Add Hungarian translation (Ndonga)
     },
   },
   {
@@ -1288,6 +1404,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Néerlandais; Flamand",
       "zh-Hant-TW": "荷蘭語；法蘭德斯語",
       "pt-PT": "Holandês; Flamengo",
+      "hu-HU": "Dutch; Flemish", // TODO: Add Hungarian translation (Holland; Flamand)
     },
   },
   {
@@ -1299,6 +1416,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Norvégien Nynorsk; Nynorsk, Norvégien",
       "zh-Hant-TW": "挪威尼諾斯克語；尼諾斯克語，挪威語",
       "pt-PT": "Norwegian Nynorsk; Nynorsk, Norwegian",
+      "hu-HU": "Norwegian Nynorsk; Nynorsk, Norwegian", // TODO: Add Hungarian translation (Norvég nynorsk)
     },
   },
   {
@@ -1310,6 +1428,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Norvégien",
       "zh-Hant-TW": "挪威語",
       "pt-PT": "Norueguês",
+      "hu-HU": "Norwegian", // TODO: Add Hungarian translation (Norvég)
     },
   },
   {
@@ -1321,6 +1440,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Ndebele, Sud; Sud Ndebele",
       "zh-Hant-TW": "南恩德貝萊語",
       "pt-PT": "Ndebele, Sul; Sul Ndebele",
+      "hu-HU": "Ndebele, South; South Ndebele", // TODO: Add Hungarian translation (Déli ndebele)
     },
   },
   {
@@ -1332,6 +1452,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Navajo; Navaho",
       "zh-Hant-TW": "納瓦荷語",
       "pt-PT": "Navajo; Navaho",
+      "hu-HU": "Navajo; Navaho", // TODO: Add Hungarian translation (Navahó)
     },
   },
   {
@@ -1343,6 +1464,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Chichewa; Chewa; Nyanja",
       "zh-Hant-TW": "齊切瓦語；契瓦語；尼揚加語",
       "pt-PT": "Chichewa; Chewa; Nyanja",
+      "hu-HU": "Chichewa; Chewa; Nyanja", // TODO: Add Hungarian translation (Csicseva; Cseva; Njandzsa)
     },
   },
   {
@@ -1354,6 +1476,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Occitan (post 1500)",
       "zh-Hant-TW": "奧克語（1500 年後）",
       "pt-PT": "Occitano (pós 1500)",
+      "hu-HU": "Occitan (post 1500)", // TODO: Add Hungarian translation (Okcitán (1500 után))
     },
   },
   {
@@ -1365,6 +1488,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Ojibwa",
       "zh-Hant-TW": "奧吉布瓦語",
       "pt-PT": "Ojibwa",
+      "hu-HU": "Ojibwa", // TODO: Add Hungarian translation (Odzsibva)
     },
   },
   {
@@ -1376,6 +1500,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Oromo",
       "zh-Hant-TW": "奧羅莫語",
       "pt-PT": "Oromo",
+      "hu-HU": "Oromo", // TODO: Add Hungarian translation (Oromo)
     },
   },
   {
@@ -1387,6 +1512,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Oriya",
       "zh-Hant-TW": "奧里亞語",
       "pt-PT": "Oriya",
+      "hu-HU": "Oriya", // TODO: Add Hungarian translation (Orija)
     },
   },
   {
@@ -1398,6 +1524,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Ossète; Ossète",
       "zh-Hant-TW": "奧塞提亞語",
       "pt-PT": "Ossetian; Ossetic",
+      "hu-HU": "Ossetian; Ossetic", // TODO: Add Hungarian translation (Oszét)
     },
   },
   {
@@ -1409,6 +1536,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Panjabi; Punjabi",
       "zh-Hant-TW": "旁遮普語",
       "pt-PT": "Panjabi; Punjabi",
+      "hu-HU": "Panjabi; Punjabi", // TODO: Add Hungarian translation (Pandzsábi)
     },
   },
   {
@@ -1420,6 +1548,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Pali",
       "zh-Hant-TW": "巴利語",
       "pt-PT": "Pali",
+      "hu-HU": "Pali", // TODO: Add Hungarian translation (Páli)
     },
   },
   {
@@ -1431,6 +1560,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Polonais",
       "zh-Hant-TW": "波蘭語",
       "pt-PT": "Polonês",
+      "hu-HU": "Polish", // TODO: Add Hungarian translation (Lengyel)
     },
   },
   {
@@ -1442,6 +1572,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Poushto; Pashto",
       "zh-Hant-TW": "普什圖語",
       "pt-PT": "Pushto; Pashto",
+      "hu-HU": "Pushto; Pashto", // TODO: Add Hungarian translation (Pastu)
     },
   },
   {
@@ -1453,6 +1584,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Portugais",
       "zh-Hant-TW": "葡萄牙語",
       "pt-PT": "Português",
+      "hu-HU": "Portuguese", // TODO: Add Hungarian translation (Portugál)
     },
   },
   {
@@ -1464,6 +1596,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Quechua",
       "zh-Hant-TW": "蓋丘亞語",
       "pt-PT": "Quechua",
+      "hu-HU": "Quechua", // TODO: Add Hungarian translation (Kecsua)
     },
   },
   {
@@ -1471,10 +1604,11 @@ export const iso639Languages: TIso639Language[] = [
     label: {
       "en-US": "Romansh",
       "de-DE": "Rämisch",
-      "pt-BR": "Romeno",
+      "pt-BR": "Romeno", // Note: This seems to be 'Romanian' in pt-BR, Romansh is 'Romanche'
       "fr-FR": "Romansh",
       "zh-Hant-TW": "羅曼什語",
       "pt-PT": "Romansh",
+      "hu-HU": "Romansh", // TODO: Add Hungarian translation (Rétoromán)
     },
   },
   {
@@ -1484,8 +1618,9 @@ export const iso639Languages: TIso639Language[] = [
       "de-DE": "Rundi",
       "pt-BR": "Rundi",
       "fr-FR": "Rundi",
-      "zh-Hant-TW": "盧安達語",
+      "zh-Hant-TW": "盧安達語", // Note: This is Kinyarwanda, Rundi is Kirundi
       "pt-PT": "Rundi",
+      "hu-HU": "Rundi", // TODO: Add Hungarian translation (Rundi)
     },
   },
   {
@@ -1497,6 +1632,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Roumain; Moldave; Moldave",
       "zh-Hant-TW": "羅馬尼亞語；摩爾多瓦語",
       "pt-PT": "Romeno; Moldavo; Moldavo",
+      "hu-HU": "Romanian; Moldavian; Moldovan", // TODO: Add Hungarian translation (Román; Moldáv)
     },
   },
   {
@@ -1508,6 +1644,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Russe",
       "zh-Hant-TW": "俄語",
       "pt-PT": "Russo",
+      "hu-HU": "Russian", // TODO: Add Hungarian translation (Orosz)
     },
   },
   {
@@ -1519,6 +1656,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Kinyarwanda",
       "zh-Hant-TW": "盧安達語",
       "pt-PT": "Kinyarwanda",
+      "hu-HU": "Kinyarwanda", // TODO: Add Hungarian translation (Kinyarwanda)
     },
   },
   {
@@ -1530,6 +1668,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Sanskrit",
       "zh-Hant-TW": "梵語",
       "pt-PT": "Sanskrit",
+      "hu-HU": "Sanskrit", // TODO: Add Hungarian translation (Szanszkrit)
     },
   },
   {
@@ -1541,6 +1680,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Sardien",
       "zh-Hant-TW": "薩丁尼亞語",
       "pt-PT": "Sardo",
+      "hu-HU": "Sardinian", // TODO: Add Hungarian translation (Szárd)
     },
   },
   {
@@ -1552,6 +1692,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Sindhi",
       "zh-Hant-TW": "信德語",
       "pt-PT": "Sindhi",
+      "hu-HU": "Sindhi", // TODO: Add Hungarian translation (Szindhi)
     },
   },
   {
@@ -1563,6 +1704,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Sami du Nord",
       "zh-Hant-TW": "北薩米語",
       "pt-PT": "Sami do Norte",
+      "hu-HU": "Northern Sami", // TODO: Add Hungarian translation (Északi számi)
     },
   },
   {
@@ -1574,6 +1716,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Sango",
       "zh-Hant-TW": "桑戈語",
       "pt-PT": "Sango",
+      "hu-HU": "Sango", // TODO: Add Hungarian translation (Szangó)
     },
   },
   {
@@ -1585,6 +1728,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Sinhala; Sinhalese",
       "zh-Hant-TW": "僧伽羅語",
       "pt-PT": "Sinhala; Sinhalese",
+      "hu-HU": "Sinhala; Sinhalese", // TODO: Add Hungarian translation (Szingaléz)
     },
   },
   {
@@ -1596,6 +1740,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Slovaque",
       "zh-Hant-TW": "斯洛伐克語",
       "pt-PT": "Slovak",
+      "hu-HU": "Slovak", // TODO: Add Hungarian translation (Szlovák)
     },
   },
   {
@@ -1607,6 +1752,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Slovène",
       "zh-Hant-TW": "斯洛維尼亞語",
       "pt-PT": "Esloveno",
+      "hu-HU": "Slovenian", // TODO: Add Hungarian translation (Szlovén)
     },
   },
   {
@@ -1618,6 +1764,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Samoan",
       "zh-Hant-TW": "薩摩亞語",
       "pt-PT": "Samoan",
+      "hu-HU": "Samoan", // TODO: Add Hungarian translation (Szamoai)
     },
   },
   {
@@ -1629,6 +1776,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Shona",
       "zh-Hant-TW": "修納語",
       "pt-PT": "Shona",
+      "hu-HU": "Shona", // TODO: Add Hungarian translation (Sona)
     },
   },
   {
@@ -1640,6 +1788,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Somali",
       "zh-Hant-TW": "索馬里語",
       "pt-PT": "Somali",
+      "hu-HU": "Somali", // TODO: Add Hungarian translation (Szomáli)
     },
   },
   {
@@ -1651,6 +1800,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Albanais",
       "zh-Hant-TW": "阿爾巴尼亞語",
       "pt-PT": "Albanian",
+      "hu-HU": "Albanian", // TODO: Add Hungarian translation (Albán)
     },
   },
   {
@@ -1662,6 +1812,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Serbe",
       "zh-Hant-TW": "塞爾維亞語",
       "pt-PT": "Serbian",
+      "hu-HU": "Serbian", // TODO: Add Hungarian translation (Szerb)
     },
   },
   {
@@ -1673,6 +1824,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Swati",
       "zh-Hant-TW": "史瓦濟語",
       "pt-PT": "Swati",
+      "hu-HU": "Swati", // TODO: Add Hungarian translation (Szvázi)
     },
   },
   {
@@ -1684,6 +1836,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Sotho, Sud",
       "zh-Hant-TW": "南索托語",
       "pt-PT": "Sotho, Sul",
+      "hu-HU": "Sotho, Southern", // TODO: Add Hungarian translation (Déli szotó)
     },
   },
   {
@@ -1695,6 +1848,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Sundanais",
       "zh-Hant-TW": "巽他語",
       "pt-PT": "Sundanese",
+      "hu-HU": "Sundanese", // TODO: Add Hungarian translation (Szundanéz)
     },
   },
   {
@@ -1706,6 +1860,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Suédois",
       "zh-Hant-TW": "瑞典語",
       "pt-PT": "Sueco",
+      "hu-HU": "Swedish", // TODO: Add Hungarian translation (Svéd)
     },
   },
   {
@@ -1717,6 +1872,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Swahili",
       "zh-Hant-TW": "史瓦希里語",
       "pt-PT": "Swahili",
+      "hu-HU": "Swahili", // TODO: Add Hungarian translation (Szuahéli)
     },
   },
   {
@@ -1728,6 +1884,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tamoul",
       "zh-Hant-TW": "泰米爾語",
       "pt-PT": "Tamil",
+      "hu-HU": "Tamil", // TODO: Add Hungarian translation (Tamil)
     },
   },
   {
@@ -1739,6 +1896,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Telugu",
       "zh-Hant-TW": "泰盧固語",
       "pt-PT": "Telugu",
+      "hu-HU": "Telugu", // TODO: Add Hungarian translation (Telugu)
     },
   },
   {
@@ -1750,6 +1908,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tadjik",
       "zh-Hant-TW": "塔吉克語",
       "pt-PT": "Tadjik",
+      "hu-HU": "Tajik", // TODO: Add Hungarian translation (Tádzsik)
     },
   },
   {
@@ -1761,6 +1920,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Thaïlandais",
       "zh-Hant-TW": "泰語",
       "pt-PT": "Tailandês",
+      "hu-HU": "Thai", // TODO: Add Hungarian translation (Thai)
     },
   },
   {
@@ -1772,6 +1932,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tigrinya",
       "zh-Hant-TW": "提格利尼亞語",
       "pt-PT": "Tigrinya",
+      "hu-HU": "Tigrinya", // TODO: Add Hungarian translation (Tigrinya)
     },
   },
   {
@@ -1783,6 +1944,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Turkmène",
       "zh-Hant-TW": "土庫曼語",
       "pt-PT": "Turkmène",
+      "hu-HU": "Turkmen", // TODO: Add Hungarian translation (Türkmén)
     },
   },
   {
@@ -1794,6 +1956,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tagalog",
       "zh-Hant-TW": "他加祿語",
       "pt-PT": "Tagalo",
+      "hu-HU": "Tagalog", // TODO: Add Hungarian translation (Tagalog)
     },
   },
   {
@@ -1805,6 +1968,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tswana",
       "zh-Hant-TW": "茨瓦納語",
       "pt-PT": "Tswana",
+      "hu-HU": "Tswana", // TODO: Add Hungarian translation (Csvana)
     },
   },
   {
@@ -1816,6 +1980,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tonga (Îles Tonga)",
       "zh-Hant-TW": "東加語",
       "pt-PT": "Tonga (Ilhas Tonga)",
+      "hu-HU": "Tonga (Tonga Islands)", // TODO: Add Hungarian translation (Tongai)
     },
   },
   {
@@ -1827,6 +1992,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Turc",
       "zh-Hant-TW": "土耳其語",
       "pt-PT": "Turco",
+      "hu-HU": "Turkish", // TODO: Add Hungarian translation (Török)
     },
   },
   {
@@ -1838,6 +2004,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tsonga",
       "zh-Hant-TW": "聰加語",
       "pt-PT": "Tsonga",
+      "hu-HU": "Tsonga", // TODO: Add Hungarian translation (Conga)
     },
   },
   {
@@ -1849,6 +2016,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tatar",
       "zh-Hant-TW": "韃靼語",
       "pt-PT": "Tatar",
+      "hu-HU": "Tatar", // TODO: Add Hungarian translation (Tatár)
     },
   },
   {
@@ -1860,6 +2028,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Twi",
       "zh-Hant-TW": "特威語",
       "pt-PT": "Twi",
+      "hu-HU": "Twi", // TODO: Add Hungarian translation (Twi)
     },
   },
   {
@@ -1871,6 +2040,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Tahitien",
       "zh-Hant-TW": "大溪地語",
       "pt-PT": "Tahitian",
+      "hu-HU": "Tahitian", // TODO: Add Hungarian translation (Tahiti)
     },
   },
   {
@@ -1882,6 +2052,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Ouïghour; Ouïghour",
       "zh-Hant-TW": "維吾爾語",
       "pt-PT": "Uighur; Uyghur",
+      "hu-HU": "Uighur; Uyghur", // TODO: Add Hungarian translation (Ujgur)
     },
   },
   {
@@ -1893,6 +2064,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Ukrainien",
       "zh-Hant-TW": "烏克蘭語",
       "pt-PT": "Ucraniano",
+      "hu-HU": "Ukrainian", // TODO: Add Hungarian translation (Ukrán)
     },
   },
   {
@@ -1904,6 +2076,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Urdu",
       "zh-Hant-TW": "烏爾都語",
       "pt-PT": "Urdu",
+      "hu-HU": "Urdu", // TODO: Add Hungarian translation (Urdu)
     },
   },
   {
@@ -1915,6 +2088,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Ouzbek",
       "zh-Hant-TW": "烏茲別克語",
       "pt-PT": "Uzbek",
+      "hu-HU": "Uzbek", // TODO: Add Hungarian translation (Üzbég)
     },
   },
   {
@@ -1926,6 +2100,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Venda",
       "zh-Hant-TW": "文達語",
       "pt-PT": "Venda",
+      "hu-HU": "Venda", // TODO: Add Hungarian translation (Venda)
     },
   },
   {
@@ -1937,6 +2112,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Vietnamien",
       "zh-Hant-TW": "越南語",
       "pt-PT": "Vietnamita",
+      "hu-HU": "Vietnamese", // TODO: Add Hungarian translation (Vietnámi)
     },
   },
   {
@@ -1948,6 +2124,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Volapük",
       "zh-Hant-TW": "沃拉普克語",
       "pt-PT": "Volapük",
+      "hu-HU": "Volapük", // TODO: Add Hungarian translation (Volapük)
     },
   },
   {
@@ -1959,6 +2136,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Valon",
       "zh-Hant-TW": "瓦隆語",
       "pt-PT": "Valão",
+      "hu-HU": "Walloon", // TODO: Add Hungarian translation (Vallon)
     },
   },
   {
@@ -1970,6 +2148,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Wolof",
       "zh-Hant-TW": "沃洛夫語",
       "pt-PT": "Wolof",
+      "hu-HU": "Wolof", // TODO: Add Hungarian translation (Volof)
     },
   },
   {
@@ -1981,6 +2160,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Xhosa",
       "zh-Hant-TW": "科薩語",
       "pt-PT": "Xhosa",
+      "hu-HU": "Xhosa", // TODO: Add Hungarian translation (Hosza)
     },
   },
   {
@@ -1992,6 +2172,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Yiddish",
       "zh-Hant-TW": "意第緒語",
       "pt-PT": "Yiddish",
+      "hu-HU": "Yiddish", // TODO: Add Hungarian translation (Jiddis)
     },
   },
   {
@@ -2003,6 +2184,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Yoruba",
       "zh-Hant-TW": "約魯巴語",
       "pt-PT": "Yoruba",
+      "hu-HU": "Yoruba", // TODO: Add Hungarian translation (Joruba)
     },
   },
   {
@@ -2014,6 +2196,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Zhuang; Chuang",
       "zh-Hant-TW": "壯語",
       "pt-PT": "Zhuang; Chuang",
+      "hu-HU": "Zhuang; Chuang", // TODO: Add Hungarian translation (Zsuang)
     },
   },
   {
@@ -2025,6 +2208,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Chinois (Simplifié)",
       "zh-Hant-TW": "簡體中文",
       "pt-PT": "Chinês (Simplificado)",
+      "hu-HU": "Chinese (Simplified)", // TODO: Add Hungarian translation (Kínai (egyszerűsített))
     },
   },
   {
@@ -2036,6 +2220,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Chinois (Traditionnel)",
       "zh-Hant-TW": "繁體中文",
       "pt-PT": "Chinês (Tradicional)",
+      "hu-HU": "Chinese (Traditional)", // TODO: Add Hungarian translation (Kínai (hagyományos))
     },
   },
   {
@@ -2047,6 +2232,7 @@ export const iso639Languages: TIso639Language[] = [
       "fr-FR": "Zulu",
       "zh-Hant-TW": "祖魯語",
       "pt-PT": "Zulu",
+      "hu-HU": "Zulu", // TODO: Add Hungarian translation (Zulu)
     },
   },
 ];
@@ -2054,5 +2240,6 @@ export const iso639Languages: TIso639Language[] = [
 export const getLanguageLabel = (languageCode: string, locale: string): string | undefined => {
   const language = iso639Languages.find((lang) => lang.alpha2 === languageCode);
   // Type assertion to tell TypeScript that we know the structure of label
+  // This will now correctly infer hu-HU as a possible key for locale
   return language?.label[locale as keyof typeof language.label];
 };
